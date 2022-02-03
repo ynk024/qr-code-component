@@ -1,0 +1,89 @@
+:root {
+  --clr--white: hsl(0, 0%, 100%);
+  --clr--light-gray: hsl(212, 45%, 89%);
+  --clr--grayish-blue: hsl(220, 15%, 55%);
+  --clr--dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*  =============
+    global styles
+    ============= */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: var(--clr--light-gray);
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*  =============
+    typography
+    ============= */
+
+h1 {
+  margin-bottom: 0.75em;
+  font-weight: 700;
+  color: var(--clr--dark-blue);
+}
+
+p {
+  color: var(--clr--grayish-blue);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/*  =============
+    layout
+    ============= */
+
+article {
+  padding: 1em 1em 2em 1em;
+  text-align: center;
+  min-width: 30ch;
+  margin: auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*  =============
+    components
+    ============= */
+
+.card {
+  background: var(--clr--white);
+  border-radius: 0.75em;
+  padding: 0.75em;
+  text-align: center;
+  box-shadow: 3px 9px 16px -5px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.card img {
+  border-radius: 0.75em;
+  width: 100%;
+}
